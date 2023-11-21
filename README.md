@@ -6,9 +6,9 @@ This installation instruction is based on Alpine Linux running on a Raspberry Pi
 - Install the dependancies
 ```apk add mpg123 php82 alsa-utils screen unzip```
 - Download the zip file of the git repository
-```wget https://github.com/XtendedGreg/backgroundMusic/archive/refs/heads/main.zip```
+```wget -O backgroundMusic.zip https://github.com/XtendedGreg/backgroundMusic/archive/refs/heads/main.zip```
 - Unzip the zip file
-```unzip backgroundMusic-main.zip```
+```unzip backgroundMusic.zip```
 - Remove Unzip Package
 ```apk del unzip```
 - Copy files to their target locations:
