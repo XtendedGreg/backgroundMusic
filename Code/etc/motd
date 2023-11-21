@@ -1,0 +1,16 @@
+#################################################################################
+                             Background Music Player
+
+INIT: /etc/init.d/backgroundMusic [start|stop|restart]
+EXEC: /bin/backgroundMusic.php
+SCREEN: screen -r backgroundMusic
+
+Music Storage: /media/mmcblk0p1/music
+
+Modify Music Through SFTP:
+mount /media/mmcblk0p1 -o rw,remount # Make SD Card Writable
+# Then connect through SFTP using a client like FileZilla to add or remove music
+mount /media/mmcblk0p1 -o ro,remount # Make SD Card Read Only
+
+Last Modified: 11-20-2023 by XtendedGreg
+
