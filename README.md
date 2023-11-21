@@ -13,10 +13,10 @@ This installation instruction is based on Alpine Linux running on a Raspberry Pi
 ```apk del unzip```
 - Copy files to their target locations:
 ```
-cp Code/bin/backgroundMusic.php /bin/backgroundMusic.php
-cp Code/etc/init.d/backgroundMusic /etc/init.d/backgroundMusic
+cp backgroundMusic-main/Code/bin/backgroundMusic.php /bin/backgroundMusic.php
+cp backgroundMusic-main/Code/etc/init.d/backgroundMusic /etc/init.d/backgroundMusic
 mv /etc/motd /etc/motd.bak
-cp Code/etc/motd /etc/motd
+cp backgroundMusic-main/Code/etc/motd /etc/motd
 ```
 - Add executable permissions
 ```
