@@ -43,21 +43,21 @@ mount /media/mmcblk0p1 -o ro,remount
 
 ## Add Music Files
 Note: Music files must be in mpeg format like MP3
-- Add on SD Card Directly
- -- Insert SD Card into machine and open the drive in file explorer
- -- If the "music" directory does not exist in the root of the drive, create it
- -- Copy the music files to the "music" directory
- -- Properly eject the SD Card
- -- Boot the SD Card on the Raspeberry Pi
-- Add files to the SD Card Using SFTP
- -- From an SSH Console
+### Add on SD Card Directly
+ - Insert SD Card into machine and open the drive in file explorer
+ -  If the "music" directory does not exist in the root of the drive, create it
+ -  Copy the music files to the "music" directory
+ -  Properly eject the SD Card
+ -  Boot the SD Card on the Raspeberry Pi
+### Add files to the SD Card Using SFTP
+- From an SSH Console
  ```mount /media/mmcblk0p1 -o rw,remount```
- -- Using an SFTP client like FileZilla, connect to the Pi and navigate to the "/media/mmcblk0p1" directory
- -- If the "music" directory does not exist, create it using the SSH Console
+- Using an SFTP client like FileZilla, connect to the Pi and navigate to the "/media/mmcblk0p1" directory
+- If the "music" directory does not exist, create it using the SSH Console
  ```"mkdir /media/mmcblk0p1/music```
- -- In the SFTP client, enter the "music" directory and copy music files to here
- -- Close the SFTP client
- -- From the SSH Console
+-  In the SFTP client, enter the "music" directory and copy music files to here
+-  Close the SFTP client
+-  From the SSH Console
  ```mount /media/mmcblk0p1 -o ro,remount```
 
 ## Runtime Commands
