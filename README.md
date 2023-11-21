@@ -54,7 +54,7 @@ Note: Music files must be in mpeg format like MP3
  ```mount /media/mmcblk0p1 -o rw,remount```
 - Using an SFTP client like FileZilla, connect to the Pi and navigate to the "/media/mmcblk0p1" directory
 - If the "music" directory does not exist, create it using the SSH Console
- ```"mkdir /media/mmcblk0p1/music```
+ ```mkdir /media/mmcblk0p1/music```
 -  In the SFTP client, enter the "music" directory and copy music files to here
 -  Close the SFTP client
 -  From the SSH Console
