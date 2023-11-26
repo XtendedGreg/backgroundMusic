@@ -61,10 +61,11 @@ Note: Music files must be in mpeg format like MP3
  ```mount /media/mmcblk0p1 -o ro,remount```
 
 ## Runtime Commands
-INIT: ```/etc/init.d/backgroundMusic [start|stop|restart]```
-SCREEN: ```screen -r backgroundMusic```
-The screen session will allow direct control of the MPG123 process using keyboard commands.
-Note: To exit the screen session: press "CTRL+a" and then "d" or close the SSH console window
+- INIT: ```/etc/init.d/backgroundMusic [start|stop|restart]```
+- SCREEN: ```screen -r backgroundMusic```
+- The screen session will allow direct control of the MPG123 process using keyboard commands
+- Note: To exit the screen session: press "CTRL+a" and then "d" or close the SSH console window
+- Edit the configuration at the bottom of /bin/backgroundMusic.php to suit your needs
 
 ## Removal Commands
 Run these commands from an SSH Console or from the terminal
