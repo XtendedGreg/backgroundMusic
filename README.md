@@ -2,7 +2,7 @@
 Background Music Player as seen on XtendedGreg YouTube Video: https://youtube.com/live/k6jqoLTWWPk
 
 ## Installation
-This installation instruction is based on Alpine Linux running on a Raspberry Pi with the apk community repository enabled
+This installation instruction is based on Alpine Linux Raspberry Pi ARMv7 version running on a Raspberry Pi with the apk community repository enabled
 - Install the dependancies
 ```apk add mpg123 php82 alsa-utils screen unzip```
 - Download the zip file of the git repository
