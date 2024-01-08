@@ -130,7 +130,7 @@ class backgroundMusic {
         // Copy missing files to temp
         foreach($filesToCopy as $file){
             // Copy music that is not already in the temporary directory that are needed to be played this cycle
-            if(get_fileSize($file) < get_availableSpace() - $this->reservedSpaceBytes){ // Make sure drive is not full before attempting to copy
+            if($this->get_fileSize($file) < $this->get_availableSpace() - $this->reservedSpaceBytes){ // Make sure drive is not full before attempting to copy
                 echo date("Y-m-d H:i.s T")." - PREP - Copying ".$this->sourceDirectory.$file."\n";
                 copy($this->sourceDirectory.$file, $this->temporaryDirectory.$file);
             }
